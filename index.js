@@ -12,6 +12,9 @@ app.get('/chip', (req, res) => {
   res.send(userInfo[0].model)
 })
 
+app.get('/', (req, res) => {
+   res.send("Try /chip or /user")
+ })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
